@@ -1,5 +1,5 @@
 const form=document.querySelector("#createTaskForm");
-let num= 1
+
 form.addEventListener("submit",(event) =>{
   event.preventDefault();
   console.log("submit working");
@@ -37,7 +37,6 @@ form.addEventListener("submit",(event) =>{
     header.style.color="light green";
   }
   
-  num +=1
 
 });
 
