@@ -2,10 +2,10 @@ const form=document.querySelector("#createTaskForm");
 
 form.addEventListener("submit",(event) =>{
   event.preventDefault();
-  console.log("submit working");
-  console.log(event.target);
+  // console.log("submit working");
+  // console.log(event.target);
   let text=document.querySelector("input").value;
-  console.log(text)
+  // console.log(text)
   let header=document.createElement("li");
   header.className="todos"
   header.textContent=text;
@@ -14,7 +14,7 @@ form.addEventListener("submit",(event) =>{
   let del = document.createElement("button");
   del.textContent="X"
   let arrayContent= document.querySelector("ol").lastElementChild;
-  console.log(arrayContent);
+  // console.log(arrayContent);
   arrayContent.appendChild(del);
 
   del.addEventListener("click",() => {
@@ -22,7 +22,7 @@ form.addEventListener("submit",(event) =>{
   })
 
   const prio= form.priority;
-  console.log(prio)
+  // console.log(prio)
 
   if(prio.value==="high"){
     header.style.color="red";
